@@ -38,12 +38,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 代码地址[https://github.com/eclimoom/angular-learn01]
 
 
-
-tree -d	只显示文件夹
-tree -D	显示文件的最后修改时间
-tree -L n	n表示显示项目的层级，n=3即只显示项目的三层结构
-tree -I pattern	pattern表示想要过滤的目录，例如 tree -I “node_modules”可以过滤掉node_modules这个文件夹
-注意，这里的参数-d、-D区分大小写，大家可以自行实验
+tree -L 4 -I '*git|*node_module*';
 
 
 
@@ -78,3 +73,53 @@ $ionicons-font-path: "../../../node_modules/ionicons/dist/fonts";
 @import "~ionicons/dist/scss/ionicons";
 
 <i class="ion-ios-add-circle"></i>
+
+
+
+
+├── README.md
+├── angular.json
+├── e2e
+│   ├── protractor.conf.js
+│   ├── src
+│   └── tsconfig.e2e.json
+├── package-lock.json
+├── package.json
+├── src
+│   ├── app
+│   │   ├── app-routing.module.ts
+│   │   ├── app.component.html
+│   │   ├── app.component.scss
+│   │   ├── app.component.spec.ts
+│   │   ├── app.component.ts
+│   │   ├── app.module.ts
+│   │   ├── core
+│   │   │   ├── core.module.ts
+│   │   │   ├── footer
+│   │   │   ├── header
+│   │   │   ├── index.ts
+│   │   │   ├── layout
+│   │   │   ├── service
+│   │   │   └── spinner
+│   │   └── modules
+│   │       ├── home
+│   │       └── login
+│   ├── assets
+│   │   └── scss
+│   │       ├── _variables.scss
+│   │       ├── ionicons.scss
+│   │       ├── partials
+│   │       └── styles.scss
+│   ├── browserslist
+│   ├── environments
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── karma.conf.js
+│   ├── main.ts
+│   ├── polyfills.ts
+│   ├── test.ts
+│   ├── tsconfig.app.json
+│   ├── tsconfig.spec.json
+│   └── tslint.json
+├── tsconfig.json
+└── tslint.json
