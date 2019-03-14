@@ -2,10 +2,9 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {BaseLayoutComponent} from './core/layout/base-layout/base-layout.component';
 import {LoginLayoutComponent} from './core/layout/login-layout/login-layout.component';
-import {LoginComponent} from './modules/login/components/login.component';
 
 const routes: Routes = [
-  //  app layout goes here
+  //  base layout
   {
     path: '',
     component: BaseLayoutComponent,
@@ -15,27 +14,18 @@ const routes: Routes = [
         pathMatch: 'full',
         redirectTo: 'home',
       },
-      {
-        path: 'home',
-        component: LoginComponent,
-        // canActivate: [AuthGuard],
-      },
+      { path: 'home', loadChildren: './modules/home/home.module#HomeModule' },
     ]
   },
 
-  //  login layout goes here
+  //  login layout
   {
     path: '',
     component: LoginLayoutComponent,
     children: [
-      {
-        path: 'login',
-        component: LoginComponent,
-      }
+      { path: 'login', loadChildren: './modules/login/login.module#LoginModule' },
     ]
   }
-  // empty layout goes here
-  // ...
 ];
 
 @NgModule({

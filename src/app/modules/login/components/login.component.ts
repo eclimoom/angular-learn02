@@ -14,12 +14,12 @@ export class LoginComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.loggerService.log(`Getting login`);
+    // this.loggerService.log(`Getting login`);
     this.spinnerService.show();
     setTimeout(() => {
-      this.loggerService.log(`We have login end ....`);
+      // this.loggerService.log(`We have login end ....`);
       this.spinnerService.hide();
-    }, 1000);
+    }, 0);
 
   }
 

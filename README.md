@@ -32,15 +32,49 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 `ng g service core/service/logger`
 
 `ng g service core/service/spinner`
+
+`ng g c modules/home/components/home --flat=true`
  
 代码地址[https://github.com/eclimoom/angular-learn01]
 
 
 
+tree -d	只显示文件夹
+tree -D	显示文件的最后修改时间
+tree -L n	n表示显示项目的层级，n=3即只显示项目的三层结构
+tree -I pattern	pattern表示想要过滤的目录，例如 tree -I “node_modules”可以过滤掉node_modules这个文件夹
+注意，这里的参数-d、-D区分大小写，大家可以自行实验
 
 
-很简单基础的 Angular 5.0写的企业后台管理系统框架，
-集成了bootstrap，d3js等常用的库，但只是提供大体布局框架，
-需要根据自己的业务需求来布局和填写细节，
-目录结构遵守Angular的建议，并结合真实的业务场景，
-包括了路由，懒加载，预加载等功能。
+
+move src/styles.scss  -->  src/assets/scss/styles.scss
+
+配置angular.json
+
+"styles": [
+  "src/styles.scss"
+],
+update to 
+ "src/assets/scss/styles.scss"
+
+
+npm install bootstrap --save
+
+
+引入bootstrap 4.x
+Create an empty file variables.scss in `src/assets/scss/`.
+
+If you are using bootstrap-sass, add the following to variables.scss:
+
+In styles.scss add the following:
+@import '~node_modules/bootstrap/scss/bootstrap';
+
+引入字体
+`npm install ionicons --save`
+
+add code in `src/assets/scss/ionicons.scss`. 
+
+$ionicons-font-path: "../../../node_modules/ionicons/dist/fonts";
+@import "~ionicons/dist/scss/ionicons";
+
+<i class="ion-ios-add-circle"></i>

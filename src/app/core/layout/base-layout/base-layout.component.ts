@@ -3,9 +3,9 @@ import {Component} from '@angular/core';
 @Component({
   selector: 'app-base-layout',
   template: `<app-header></app-header>
-              <router-outlet></router-outlet>
-              <app-footer></app-footer>
-              <app-spinner></app-spinner>`
+              <div class="mt-1">
+                <router-outlet></router-outlet>
+              </div>`
 })
 export class BaseLayoutComponent {
 

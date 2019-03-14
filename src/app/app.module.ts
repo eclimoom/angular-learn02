@@ -5,16 +5,18 @@ import { NgModule } from '@angular/core';
 import {CoreModule} from './core/core.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {LoginModule} from './modules/login/login.module';
+import {FooterComponent} from './core/footer/footer.component';
+import {SpinnerComponent} from './core/spinner/spinner.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    FooterComponent,
+    SpinnerComponent,
   ],
   imports: [
     BrowserModule,
     CoreModule,
-    LoginModule,
     AppRoutingModule,
   ],
   providers: [],
