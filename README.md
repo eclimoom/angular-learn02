@@ -18,15 +18,22 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 ####快速生成 core module && base component、service
 
 `ng g module core`
+
 `ng g c core/header`
+
 `ng g c core/footer`
+
 `ng g c core/spinner`
+
 `ng g c core/layout/base-layout --inlineStyle=true | --inlineTemplate=true`
+
 `ng g c core/layout/login-layout --inlineTemplate=true`
+
 `ng g service core/service/logger`
+
 `ng g service core/service/spinner`
  
-
+代码地址[https://github.com/eclimoom/angular-learn01]
 
 
 
