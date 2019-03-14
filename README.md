@@ -35,8 +35,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ### 启动应用
 cd moom-ysh && ng serve --open
 
-
-
+####创建 core module && base component、service
+`
  ng g module core
  ng g c core/header
  ng g c core/footer
@@ -46,10 +46,8 @@ cd moom-ysh && ng serve --open
  
  ng g service core/service/logger
  ng g service core/service/spinner
+ `
  
- 
- core.module.ts
- add  RouterModule
  
 
 
