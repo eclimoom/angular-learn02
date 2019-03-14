@@ -26,6 +26,31 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
+1.快速创建并初始化
+### 快速安装
+`npm install -g @angular/cli`
 
-1.
- ng new moom-ysh --style=scss
+### 创建并初始化应用 使用scss
+`ng new moom-ysh --style=scss`
+### 启动应用
+cd moom-ysh && ng serve --open
+
+
+
+ ng g module core
+ ng g c core/header
+ ng g c core/footer
+ ng g c core/spinner
+ ng g c core/layout/app-layout
+ ng g c core/layout/login-layout
+ 
+
+
+
+
+
+很简单基础的 Angular 5.0写的企业后台管理系统框架，
+集成了bootstrap，d3js等常用的库，但只是提供大体布局框架，
+需要根据自己的业务需求来布局和填写细节，
+目录结构遵守Angular的建议，并结合真实的业务场景，
+包括了路由，懒加载，预加载等功能。
