@@ -1,18 +1,12 @@
-import {Component, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
-  selector: 'app-full-layout',
+  selector: 'app-base-layout',
   template: `<app-header></app-header>
-    <router-outlet></router-outlet>
-    <app-footer></app-footer>
-  `
+              <router-outlet></router-outlet>
+              <app-footer></app-footer>
+              <app-spinner></app-spinner>`
 })
-export class FullLayoutComponent implements OnInit {
-
-  constructor() {
-  }
-
-  ngOnInit() {
-  }
+export class BaseLayoutComponent {
 
 }

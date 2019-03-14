@@ -41,8 +41,15 @@ cd moom-ysh && ng serve --open
  ng g c core/header
  ng g c core/footer
  ng g c core/spinner
- ng g c core/layout/app-layout
- ng g c core/layout/login-layout
+ ng g c core/layout/base-layout --inlineStyle=true | --inlineTemplate=true
+ ng g c core/layout/login-layout --inlineTemplate=true
+ 
+ ng g service core/service/logger
+ ng g service core/service/spinner
+ 
+ 
+ core.module.ts
+ add  RouterModule
  
 
 

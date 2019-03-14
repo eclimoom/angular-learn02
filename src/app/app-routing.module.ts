@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {AppLayoutComponent} from './core/layout/app-layout/app-layout.component';
+import {BaseLayoutComponent} from './core/layout/base-layout/base-layout.component';
 import {LoginLayoutComponent} from './core/layout/login-layout/login-layout.component';
 import {LoginComponent} from './modules/login/components/login.component';
 
@@ -8,7 +8,7 @@ const routes: Routes = [
   //  app layout goes here
   {
     path: '',
-    component: AppLayoutComponent,
+    component: BaseLayoutComponent,
     children: [
       {
         path: '',
